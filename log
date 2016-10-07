@@ -1,0 +1,33 @@
+000 (491.000.000) 10/07 12:45:24 Job submitted from host: <172.17.9.8:8080?addrs=172.17.9.8-8080>
+...
+001 (491.000.000) 10/07 12:45:25 Job executing on host: <172.17.9.15:46956?addrs=172.17.9.15-46956>
+...
+005 (491.000.000) 10/07 12:45:27 Job terminated.
+	(0) Abnormal termination (signal 1)
+	(0) No core file
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	173  -  Run Bytes Sent By Job
+	9383  -  Run Bytes Received By Job
+	173  -  Total Bytes Sent By Job
+	9383  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :       20       20  80382878
+	   Memory (MB)          :                 1      1894
+...
+000 (492.000.000) 10/07 17:39:45 Job submitted from host: <172.17.9.8:8080?addrs=172.17.9.8-8080>
+...
+001 (492.000.000) 10/07 17:39:51 Job executing on host: <172.17.9.15:46956?addrs=172.17.9.15-46956>
+...
+007 (492.000.000) 10/07 17:40:14 Shadow exception!
+	Error from slot1@netlab14: Cannot start container: invalid image name: rfito
+	0  -  Run Bytes Sent By Job
+	9391  -  Run Bytes Received By Job
+...
+012 (492.000.000) 10/07 17:40:14 Job was held.
+	Error from slot1@netlab14: Cannot start container: invalid image name: rfito
+	Code 35 Subcode 0
+...
