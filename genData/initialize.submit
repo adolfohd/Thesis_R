@@ -1,0 +1,12 @@
+universe                = docker
+docker_image            = fitohd/thesis_r
+executable              = Rscript 
+arguments               = dataInit.r
+should_transfer_files   = YES
+transfer_input_files    = dataInit.r,fdataset.r,gaitData.csv,initialize.submit,myKF.r,ndataset.r,subsam.r
+transfer_output_files   = data.RData
+when_to_transfer_output = ON_EXIT
+output                  = out.$(Process)
+error                   = err.$(Process)
+log                     = log.$(Process)
+queue 1
