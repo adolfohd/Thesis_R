@@ -31,7 +31,7 @@ j  <- as.numeric(args[2])
 
 ############################### RFC --> R-Side######
 
-ntree <- 100*i
+ntree <- 20*i
 output.forest <- randomForest(f, 
                               data = r.train, 
                               ntree = ntree, 
