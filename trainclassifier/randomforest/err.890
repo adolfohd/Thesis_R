@@ -1,0 +1,3 @@
+WARNING: Your kernel does not support swap limit capabilities, memory limited without swap.
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.

@@ -1,0 +1,6 @@
+WARNING: Your kernel does not support swap limit capabilities, memory limited without swap.
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
+Warning message:
+In randomForest.default(m, y, ...) :
+  invalid mtry: reset to within valid range

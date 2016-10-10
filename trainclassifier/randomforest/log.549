@@ -1,0 +1,21 @@
+000 (3146.549.000) 10/09 15:34:17 Job submitted from host: <192.168.28.105:46293?addrs=192.168.28.105-46293>
+...
+000 (3147.549.000) 10/09 16:04:02 Job submitted from host: <192.168.28.105:46293?addrs=192.168.28.105-46293>
+...
+001 (3146.549.000) 10/09 16:45:56 Job executing on host: <192.168.28.66:55339?addrs=192.168.28.66-55339>
+...
+005 (3146.549.000) 10/09 16:46:34 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	96636992  -  Run Bytes Sent By Job
+	165652992  -  Run Bytes Received By Job
+	96636992  -  Total Bytes Sent By Job
+	165652992  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :   162957    75000   9318092
+	   Memory (MB)          :                 0         0
+...
