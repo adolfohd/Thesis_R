@@ -1,0 +1,31 @@
+000 (3146.609.000) 10/09 15:34:18 Job submitted from host: <192.168.28.105:46293?addrs=192.168.28.105-46293>
+...
+000 (3147.609.000) 10/09 16:04:02 Job submitted from host: <192.168.28.105:46293?addrs=192.168.28.105-46293>
+...
+007 (3146.609.000) 10/09 17:01:32 Shadow exception!
+	Error from slot1@uvcluster-08.cloud.univalle.edu.co: Failed to transfer files
+	0  -  Run Bytes Sent By Job
+	73622424  -  Run Bytes Received By Job
+...
+007 (3146.609.000) 10/09 18:57:20 Shadow exception!
+	Error from slot1@uvcluster-02.cloud.univalle.edu.co: Failed to transfer files
+	0  -  Run Bytes Sent By Job
+	92011784  -  Run Bytes Received By Job
+...
+001 (3146.609.000) 10/09 22:17:49 Job executing on host: <192.168.28.51:9596?addrs=192.168.28.51-9596>
+...
+005 (3146.609.000) 10/09 22:19:53 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	485409824  -  Run Bytes Sent By Job
+	554305216  -  Run Bytes Received By Job
+	485409824  -  Total Bytes Sent By Job
+	554305216  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :   542618    75000    925016
+	   Memory (MB)          :                 0         0
+...

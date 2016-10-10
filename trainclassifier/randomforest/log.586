@@ -1,0 +1,19 @@
+000 (3146.586.000) 10/09 15:34:18 Job submitted from host: <192.168.28.105:46293?addrs=192.168.28.105-46293>
+...
+000 (3147.586.000) 10/09 16:04:02 Job submitted from host: <192.168.28.105:46293?addrs=192.168.28.105-46293>
+...
+007 (3146.586.000) 10/09 16:55:57 Shadow exception!
+	Error from slot1@uvcluster-13.cloud.univalle.edu.co: Failed to transfer files
+	0  -  Run Bytes Sent By Job
+	127796904  -  Run Bytes Received By Job
+...
+007 (3146.586.000) 10/09 18:49:00 Shadow exception!
+	Error from slot1@uvcluster-05.cloud.univalle.edu.co: Failed to transfer files
+	0  -  Run Bytes Sent By Job
+	345566336  -  Run Bytes Received By Job
+...
+007 (3146.586.000) 10/09 21:55:56 Shadow exception!
+	Error from slot1@uvcluster-05.cloud.univalle.edu.co: Failed to transfer files
+	0  -  Run Bytes Sent By Job
+	153553680  -  Run Bytes Received By Job
+...

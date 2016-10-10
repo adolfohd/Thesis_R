@@ -12,7 +12,7 @@ log                     = log.$(Process)
 MAX_I = 100 
 MAX_J = 20
 N = MAX_I * MAX_J
-I = ($(Process) / $(MAX_J))+1
+I = ($(Process) / $(MAX_J))+1+50
 J = ($(Process) % $(MAX_J))+1
 
 queue 1000
