@@ -4,6 +4,9 @@ getwd()
 args = commandArgs(trailingOnly=TRUE)
 load("data.RData")
 
+setwd("~/code/thesis_R"); i=1; j=1
+load("data/data.RData")
+
 # random forest  ###################################################
 library(randomForest)
 n <- names(l.train)
