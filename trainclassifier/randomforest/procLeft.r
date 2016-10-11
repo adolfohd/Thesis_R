@@ -1,6 +1,6 @@
 #!/usr/bin/Rscript
 
-is.this.cluster = FALSE
+is.this.cluster = TRUE
 
 if (is.this.cluster){
   getwd()
