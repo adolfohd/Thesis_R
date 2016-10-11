@@ -7,8 +7,14 @@
 # PREAMBLE ###################################################
 #### http://rdotnet.codeplex.com/documentation
 #### https://cran.r-project.org/web/packages/randomForest/randomForest.pdf
-setwd("~/code/thesis_R")
-load("data/data.RData")
+# setwd("/media/Windows/Users/fitoh/Dropbox/Fito y yo_/Univalle Maestr??a/Datos") # Mi laptop UBUNTU
+# setwd("C:/Users/fitoh/Dropbox/Fito y yo_/UnivalleMaster/Datos") # Mi laptop Windows
+# setwd("F:/Dropbox/Fito y yo_/UnivalleMaster/Datos") # Mi Casa
+# setwd("~/Dropbox/Fito y yo_/Univalle Maestr??a/Datos") # iMac TAKUM
+# setwd("/media/fito/OS/Users/Terapia de Marcha/Dropbox/Fito y yo_/UnivalleMaster/Datos") # Ubuntu Marcha
+ setwd("C:/Users/Terapia de Marcha/Dropbox/Fito y yo_/UnivalleMaster/Datos") # Windows Marcha
+# ---------------------------
+load("data.RData")
 #         ###################################################
 
 #     Install Packages ###################################################
@@ -36,8 +42,8 @@ rm(list= ( setdiff(ls(),
 
 # --------------------
 # "Include" files
-source("lib/subsam.r")
-source("lib/subML.r")
+source("subsam.r")
+source("subML.r")
 
 # --------------------
 
@@ -75,7 +81,7 @@ rsub.index <- subsam(rData)
 rSub <- rData[rsub.index,]
 
 lsub.index <- subsam(lData)
-lSub <- rData[lsub.index,]
+lSub <- lData[lsub.index,]
 
 # Kalman filter ###################################################
 
@@ -144,6 +150,9 @@ index.train <- 1:floor(trainingFactor*nrow(fNSub.l_))
 l.train <- fNSub.l_[index.train,]
 l.test  <- fNSub.l_[-index.train,]
 index.train
+
+save(ls(), )
+
 
 # ANN2 - nnet  ###################################################
 
@@ -233,7 +242,7 @@ for (i in 1:iter.trees){
 
 # normalize datapoint
 
-source("lib/ndatapoint.R")
+source("ndatapoint.R")
 ndatapoint(r.test[1,-31], mm.r, bb.r)
 
 # View the forest results.

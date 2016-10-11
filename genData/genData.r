@@ -1,7 +1,8 @@
 #!/usr/bin/Rscript
 
-setwd("/home/docker")
-rawData <- read.csv(file="gaitData.csv", header=TRUE, sep=";")
+# setwd("/home/docker")
+setwd("~/code/thesis_R")
+rawData <- read.csv(file="data/gaitData.csv", header=TRUE, sep=";")
 rawData$Gender<-factor(rawData$Gender)
 
 rawData_ <- rawData[4:169]
@@ -36,7 +37,7 @@ rsub.index <- subsam(rData)
 rSub <- rData[rsub.index,]
 
 lsub.index <- subsam(lData)
-lSub <- rData[lsub.index,]
+lSub <- lData[lsub.index,]
 
 # Kalman filter ###################################################
 
@@ -60,13 +61,6 @@ m.r <- normalization.r$m
 
 
 # # Feature selection ###################################################
-# library(mlbench)
-# library(caret)
-# library(randomForest)
-# control <- rfeControl(functions=rfFuncs, method="cv", number=100)
-# run the RFE algorithm
-# results <- rfe(rTrainNN[,-ncol(rTrainNN)], rTrainNN[,ncol(rTrainNN)], sizes=c(1:(ncol(rTrainNN)-1)), rfeControl=control)
-
 n.features <- 30
 
 print("Computing feature selection for R side")
@@ -106,7 +100,8 @@ l.train <- fNSub.l_[index.train,]
 l.test  <- fNSub.l_[-index.train,]
 index.train
 
-save.image("data.RData")
+print("data saved on projectRoot/genData/data.RData")
+save.image("genData/data.RData")
 
 
 
