@@ -24,3 +24,15 @@
 	   Disk (KB)            :   368487    75000   9316983
 	   Memory (MB)          :                 0         0
 ...
+007 (3147.571.000) 10/10 12:13:26 Shadow exception!
+	Error from slot1@uvcluster-11.cloud.univalle.edu.co: SHADOW at 192.168.28.105 failed to send file(s) to <192.168.28.64:21032>: error reading from /home/fitohd/code/thesis_r/trainclassifier/randomforest/data.RData: (errno 2) No such file or directory; STARTER failed to receive file(s) from <192.168.28.105:22493>
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (3147.571.000) 10/10 12:13:26 Job was held.
+	Error from slot1@uvcluster-11.cloud.univalle.edu.co: SHADOW at 192.168.28.105 failed to send file(s) to <192.168.28.64:21032>: error reading from /home/fitohd/code/thesis_r/trainclassifier/randomforest/data.RData: (errno 2) No such file or directory; STARTER failed to receive file(s) from <192.168.28.105:22493>
+	Code 13 Subcode 2
+...
+009 (3147.571.000) 10/10 18:04:43 Job was aborted by the user.
+	via condor_rm (by user fitohd)
+...

@@ -7,3 +7,27 @@
 	0  -  Run Bytes Sent By Job
 	571213312  -  Run Bytes Received By Job
 ...
+007 (3146.927.000) 10/10 02:26:42 Shadow exception!
+	Error from slot1@uvcluster-11.cloud.univalle.edu.co: SHADOW at 192.168.28.105 failed to send file(s) to <192.168.28.64:49493>: error reading from /home/fitohd/code/thesis_r/trainclassifier/randomforest/data.RData: (errno 2) No such file or directory; STARTER failed to receive file(s) from <192.168.28.105:17935>
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (3146.927.000) 10/10 02:26:42 Job was held.
+	Error from slot1@uvcluster-11.cloud.univalle.edu.co: SHADOW at 192.168.28.105 failed to send file(s) to <192.168.28.64:49493>: error reading from /home/fitohd/code/thesis_r/trainclassifier/randomforest/data.RData: (errno 2) No such file or directory; STARTER failed to receive file(s) from <192.168.28.105:17935>
+	Code 13 Subcode 2
+...
+007 (3147.927.000) 10/10 17:48:17 Shadow exception!
+	Error from slot1@uvcluster-12.cloud.univalle.edu.co: SHADOW at 192.168.28.105 failed to send file(s) to <192.168.28.65:2989>: error reading from /home/fitohd/code/thesis_r/trainclassifier/randomforest/data.RData: (errno 2) No such file or directory; STARTER failed to receive file(s) from <192.168.28.105:60906>
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (3147.927.000) 10/10 17:48:17 Job was held.
+	Error from slot1@uvcluster-12.cloud.univalle.edu.co: SHADOW at 192.168.28.105 failed to send file(s) to <192.168.28.65:2989>: error reading from /home/fitohd/code/thesis_r/trainclassifier/randomforest/data.RData: (errno 2) No such file or directory; STARTER failed to receive file(s) from <192.168.28.105:60906>
+	Code 13 Subcode 2
+...
+009 (3147.927.000) 10/10 18:04:48 Job was aborted by the user.
+	via condor_rm (by user fitohd)
+...
+009 (3146.927.000) 10/11 09:50:32 Job was aborted by the user.
+	via condor_rm (by user fitohd)
+...

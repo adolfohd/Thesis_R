@@ -12,3 +12,32 @@
 	0  -  Run Bytes Sent By Job
 	0  -  Run Bytes Received By Job
 ...
+007 (3146.723.000) 10/09 23:51:45 Shadow exception!
+	Error from slot1@uvcluster-13.cloud.univalle.edu.co: Failed to transfer files
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+007 (3146.723.000) 10/10 04:06:21 Shadow exception!
+	Error from slot1@uvcluster-13.cloud.univalle.edu.co: SHADOW at 192.168.28.105 failed to send file(s) to <192.168.28.66:4761>: error reading from /home/fitohd/code/thesis_r/trainclassifier/randomforest/data.RData: (errno 2) No such file or directory; STARTER failed to receive file(s) from <192.168.28.105:48309>
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (3146.723.000) 10/10 04:06:21 Job was held.
+	Error from slot1@uvcluster-13.cloud.univalle.edu.co: SHADOW at 192.168.28.105 failed to send file(s) to <192.168.28.66:4761>: error reading from /home/fitohd/code/thesis_r/trainclassifier/randomforest/data.RData: (errno 2) No such file or directory; STARTER failed to receive file(s) from <192.168.28.105:48309>
+	Code 13 Subcode 2
+...
+007 (3147.723.000) 10/10 14:36:25 Shadow exception!
+	Error from slot1@uvcluster-12.cloud.univalle.edu.co: SHADOW at 192.168.28.105 failed to send file(s) to <192.168.28.65:40717>: error reading from /home/fitohd/code/thesis_r/trainclassifier/randomforest/data.RData: (errno 2) No such file or directory; STARTER failed to receive file(s) from <192.168.28.105:61838>
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (3147.723.000) 10/10 14:36:25 Job was held.
+	Error from slot1@uvcluster-12.cloud.univalle.edu.co: SHADOW at 192.168.28.105 failed to send file(s) to <192.168.28.65:40717>: error reading from /home/fitohd/code/thesis_r/trainclassifier/randomforest/data.RData: (errno 2) No such file or directory; STARTER failed to receive file(s) from <192.168.28.105:61838>
+	Code 13 Subcode 2
+...
+009 (3147.723.000) 10/10 18:04:45 Job was aborted by the user.
+	via condor_rm (by user fitohd)
+...
+009 (3146.723.000) 10/11 09:50:31 Job was aborted by the user.
+	via condor_rm (by user fitohd)
+...

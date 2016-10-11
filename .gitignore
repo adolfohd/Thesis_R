@@ -3,3 +3,9 @@ trainclassifier/randomforest/Data/
 trainclassifier/randomforest/out.*
 trainclassifier/randomforest/log.*
 trainclassifier/randomforest/err.*
+
+trainclassifier/randomforest/out*.*
+trainclassifier/randomforest/log*.*
+trainclassifier/randomforest/err*.*
+
+

@@ -19,3 +19,17 @@
 	   Disk (KB)            :   595059    75000   9323329
 	   Memory (MB)          :                 0         0
 ...
+004 (3147.944.000) 10/10 18:04:27 Job was evicted.
+	(0) Job was not checkpointed.
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	464658016  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :   453404   200000   9314712
+	   Memory (MB)          :                 0         0
+...
+009 (3147.944.000) 10/10 18:04:28 Job was aborted by the user.
+	via condor_rm (by user fitohd)
+...

@@ -19,3 +19,11 @@
 	   Disk (KB)            :   594998    75000   9323010
 	   Memory (MB)          :                 0         0
 ...
+007 (3147.945.000) 10/10 18:04:26 Shadow exception!
+	Error from slot1@uvcluster-12.cloud.univalle.edu.co: Assertion ERROR on (daemonCore)
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+009 (3147.945.000) 10/10 18:04:26 Job was aborted by the user.
+	via condor_rm (by user fitohd)
+...
