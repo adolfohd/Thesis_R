@@ -8,8 +8,7 @@
 #### http://rdotnet.codeplex.com/documentation
 #### https://cran.r-project.org/web/packages/randomForest/randomForest.pdf
 setwd("~/code/thesis_R")
-# ---------------------------
-load("data.RData")
+load("data/data.RData")
 #         ###################################################
 
 #     Install Packages ###################################################
