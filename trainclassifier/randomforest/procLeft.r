@@ -30,6 +30,11 @@ output.forest <- randomForest(f,
                               test = l.test,
                               do.trace = T
 )
-save(output.forest, file=paste(output.folder,"outLeft_ntree_",ntree, "_mtry_",2*j, ".RData",collapse=""))
+
+output.file.path <- paste(
+  output.folder,
+  "outLeft_ntree_",ntree, "_mtry_",2*j, ".RData", sep = "")
+
+save(output.forest, file= output.file.path)
 
 
