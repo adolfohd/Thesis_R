@@ -3,12 +3,12 @@
 is.this.cluster = TRUE
 
 if (is.this.cluster){
-  getwd()
+  print(list.files(getwd()))
   args = commandArgs(trailingOnly=TRUE)
   load("data.RData")
   i <- as.numeric(args[1])
   j  <- as.numeric(args[2])
-  output.folder <- "Data/"
+  output.folder <- "DataL/"
 }else{
   setwd("~/code/thesis_R"); i=1; j=1
   load("data/data.RData")
@@ -31,9 +31,13 @@ output.forest <- randomForest(f,
                               do.trace = T
 )
 
+print("classifier computed")
+
 output.file.path <- paste(
   output.folder,
   "outLeft_ntree_",ntree, "_mtry_",2*j, ".RData", sep = "")
+
+print(output.file.path)
 
 save(output.forest, file= output.file.path)
 

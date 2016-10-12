@@ -20,6 +20,6 @@ output.forest <- randomForest(f,
                               test = r.test,
                               do.trace = T
 )
-save(output.forest, file=paste("Data/outF_i_",i, "_j_",j, ".RData"))
+save(output.forest, file=paste("Data/outF_i_",i, "_j_",j, ".RData", sep=""))
 
 

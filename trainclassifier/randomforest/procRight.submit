@@ -1,9 +1,9 @@
 universe                = docker
 docker_image            = fitohd/thesis_r
 executable              = Rscript
-arguments               = proc.r $INT(I) $INT(J)
+arguments               = procRight.r $INT(I) $INT(J)
 should_transfer_files   = YES
-transfer_input_files    = proc.r, ../../data.RData
+transfer_input_files    = procRight.r, ../../data.RData
 transfer_output_files   = Data
 when_to_transfer_output = ON_EXIT
 output                  = out.$(Process)
