@@ -14,3 +14,4 @@ install.packages("varSelRF")
 # 2016.10.08 23:51 after system failure
 
 install.packages("knitr")
+install.packages("NeuralNetTools")

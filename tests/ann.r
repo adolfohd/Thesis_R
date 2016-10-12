@@ -1,15 +1,38 @@
-# install.packages("neuralnet")
-install.packages(NeuralNetTools)
-library(NeuralNetTools)
+
+is.this.cluster = FALSE
+
 # ANN2 - nnet  ###################################################
 
-# ANN - neuralnet  ###################################################
-# rm(rTrainNN,rTestNN,lTrainNN,lTestNN)
-rm(list = ls())
-setwd("~/code/thesis_R")
-load("data/data.RData")
+# https://beckmw.wordpress.com/tag/nnet/
 
-source("lib/allnumeric.r")
+
+
+
+
+
+# ANN - neuralnet  ###################################################
+
+# install.packages("neuralnet")
+# install.packages("NeuralNetTools")
+
+
+# https://beckmw.wordpress.com/tag/neural-network/
+# 
+library(NeuralNetTools)
+
+if (is.this.cluster){
+  data.folder = ""
+  lib.folder =  ""
+}else{
+  setwd("~/code/thesis_R")
+  data.folder = "data/"
+  lib.folder =  "lib/"
+}
+
+rm(list = ls())
+
+load(  paste(data.folder, "data.RData"  , sep = ""))
+source(paste( lib.folder, "allnumeric.r", sep = ""))
 
 # all features are numeric
 
@@ -22,14 +45,14 @@ lTestNN <- allnumeric(l.test)
 # separate each output level into separate outputs
 # L-side
 
-source("tests/separateoutput.r")
+source(paste(lib.folder,"separateoutput.r", sep = ""))
 
 r.train.nn <- separate.output(rTrainNN, gait.phases)
 summary(r.train.nn)
 
 n <- names(r.train.nn)
 f <- as.formula(paste( paste(gait.phases, collapse = " + ")   ," ~", paste(n[!n %in% gait.phases], collapse = " + ")))
-nn <- neuralnet(f,data=r.train.nn,hidden=100, stepmax = 1000)
+nn <- neuralnet(f,data=r.train.nn,hidden=200)
 plot(nn)
 
 pr.nn <- compute(nn,rTrainNN[,-ncol(rTrainNN)])
