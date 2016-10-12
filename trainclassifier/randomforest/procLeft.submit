@@ -15,4 +15,4 @@ N = MAX_I * MAX_J
 I = ($(Process) / $(MAX_J))+1
 J = ($(Process) % $(MAX_J))+1
 
-queue 1
+queue 1000
