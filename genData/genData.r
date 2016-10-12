@@ -2,6 +2,18 @@
 
 # setwd("/home/docker")
 setwd("~/code/thesis_R")
+
+gait.phases <- c(
+  "none",
+  "loading.response",
+  "mid.stance",
+  "terminal.stance",
+  "pre.swing",
+  "initial.swing",
+  "mid.swing",
+  "terminal.swing"
+)
+
 rawData <- read.csv(file="data/gaitData.csv", header=TRUE, sep=";")
 rawData$Gender<-factor(rawData$Gender)
 
