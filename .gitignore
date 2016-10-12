@@ -1,4 +1,5 @@
 trainclassifier/randomforest/Data/
+trainclassifier/randomforest/DataL/
 
 trainclassifier/randomforest/out.*
 trainclassifier/randomforest/log.*
