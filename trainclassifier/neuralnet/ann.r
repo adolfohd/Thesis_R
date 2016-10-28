@@ -1,14 +1,9 @@
 
-is.this.cluster = FALSE
+is.this.cluster = TRUE
 
 # ANN2 - nnet  ###################################################
 
 # https://beckmw.wordpress.com/tag/nnet/
-
-
-
-
-
 
 # ANN - neuralnet  ###################################################
 
@@ -18,11 +13,17 @@ is.this.cluster = FALSE
 
 # https://beckmw.wordpress.com/tag/neural-network/
 # 
-library(NeuralNetTools)
+
+
+# library(NeuralNetTools)
 
 if (is.this.cluster){
   data.folder = ""
   lib.folder =  ""
+
+  args = commandArgs(trailingOnly=TRUE)
+  i <- as.numeric(args[1])
+  j  <- as.numeric(args[2])
 }else{
   setwd("~/code/thesis_R")
   data.folder = "data/"
@@ -53,10 +54,18 @@ summary(r.train.nn)
 n <- names(r.train.nn)
 f <- as.formula(paste( paste(gait.phases, collapse = " + ")   ," ~", paste(n[!n %in% gait.phases], collapse = " + ")))
 nn <- neuralnet(f,data=r.train.nn,hidden=200)
-plot(nn)
+# plot(nn)
 
 pr.nn <- compute(nn,rTrainNN[,-ncol(rTrainNN)])
 
 
-plot(rTrainNN$Right,pr.nn$net.result, col='red',main='Real vs predicted NN',pch=18,cex=0.7)
-abline(0,1,lwd=2)
+# plot(rTrainNN$Right,pr.nn$net.result, col='red',main='Real vs predicted NN',pch=18,cex=0.7)
+# abline(0,1,lwd=2)
+
+output.file.path <- paste(
+  output.folder,
+  "outLeft_ntree_",ntree, "_mtry_",2*j, ".RData", sep = "")
+
+print(output.file.path)
+
+save(output.forest, file= output.file.path)

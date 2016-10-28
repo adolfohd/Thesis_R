@@ -1,0 +1,18 @@
+universe                = docker
+docker_image            = fitohd/thesis_r
+executable              = Rscript
+arguments               = ann.r $INT(I) $INT(J)
+should_transfer_files   = YES
+transfer_input_files    = ../../data/data.RData, data
+transfer_output_files   = data
+when_to_transfer_output = ON_EXIT
+output                  = out.$(Process)
+error                   = err.$(Process)
+log                     = log.$(Process)
+MAX_I = 100 
+MAX_J = 10
+N = MAX_I * MAX_J
+I = ($(Process) / $(MAX_J))+1
+J = ($(Process) % $(MAX_J))+1
+
+queue 1
