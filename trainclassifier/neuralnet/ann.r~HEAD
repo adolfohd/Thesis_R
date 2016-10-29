@@ -3,21 +3,15 @@ is.this.cluster = FALSE
 
 # ANN2 - nnet  ###################################################
 
-# https://beckmw.wordpress.com/tag/nnet/
-
-
-
-
-
+  # https://beckmw.wordpress.com/tag/nnet/
 
 # ANN - neuralnet  ###################################################
 
 # install.packages("neuralnet")
 # install.packages("NeuralNetTools")
 
-
 # https://beckmw.wordpress.com/tag/neural-network/
-# 
+ 
 library(NeuralNetTools)
 
 if (is.this.cluster){
