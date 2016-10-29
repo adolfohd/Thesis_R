@@ -20,10 +20,11 @@ is.this.cluster = TRUE
 if (is.this.cluster){
   data.folder = ""
   lib.folder =  ""
-
+  print(data.folder)
   args = commandArgs(trailingOnly=TRUE)
   i <- as.numeric(args[1])
   j  <- as.numeric(args[2])
+  output.folder <- "data/"
 }else{
   setwd("~/code/thesis_R")
   data.folder = "data/"
@@ -64,8 +65,8 @@ pr.nn <- compute(nn,rTrainNN[,-ncol(rTrainNN)])
 
 output.file.path <- paste(
   output.folder,
-  "outLeft_ntree_",ntree, "_mtry_",2*j, ".RData", sep = "")
+  "out",2*j, ".RData", sep = "")
 
 print(output.file.path)
 
-save(output.forest, file= output.file.path)
+save(nn, file= output.file.path)
