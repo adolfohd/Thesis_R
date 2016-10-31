@@ -1,80 +1,20 @@
-000 (3184.000.000) 10/28 12:18:35 Job submitted from host: <192.168.28.105:46293?addrs=192.168.28.105-46293>
+000 (3189.000.000) 10/31 13:11:11 Job submitted from host: <192.168.28.105:46293?addrs=192.168.28.105-46293>
 ...
-001 (3184.000.000) 10/28 12:18:42 Job executing on host: <192.168.28.53:14539?addrs=192.168.28.53-14539>
+001 (3189.000.000) 10/31 13:11:36 Job executing on host: <192.168.28.53:14539?addrs=192.168.28.53-14539>
 ...
-005 (3184.000.000) 10/28 12:25:52 Job terminated.
-	(0) Abnormal termination (signal 2)
-	(0) No core file
-		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
-		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
-		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
-		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
-	1568  -  Run Bytes Sent By Job
-	70232528  -  Run Bytes Received By Job
-	1568  -  Total Bytes Sent By Job
-	70232528  -  Total Bytes Received By Job
-	Partitionable Resources :    Usage  Request Allocated
-	   Cpus                 :                 1         1
-	   Disk (KB)            :    75000    75000    935489
-	   Memory (MB)          :                 0         0
-...
-000 (3186.000.000) 10/28 20:29:09 Job submitted from host: <192.168.28.105:46293?addrs=192.168.28.105-46293>
-...
-001 (3186.000.000) 10/28 20:31:35 Job executing on host: <192.168.28.65:13771?addrs=192.168.28.65-13771>
-...
-005 (3186.000.000) 10/28 20:34:52 Job terminated.
+005 (3189.000.000) 10/31 13:11:38 Job terminated.
 	(0) Abnormal termination (signal 1)
 	(0) No core file
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
-	1629  -  Run Bytes Sent By Job
-	70234152  -  Run Bytes Received By Job
-	1629  -  Total Bytes Sent By Job
-	70234152  -  Total Bytes Received By Job
+	225  -  Run Bytes Sent By Job
+	70234184  -  Run Bytes Received By Job
+	225  -  Total Bytes Sent By Job
+	70234184  -  Total Bytes Received By Job
 	Partitionable Resources :    Usage  Request Allocated
 	   Cpus                 :                 1         1
-	   Disk (KB)            :    75000    75000   9340719
-	   Memory (MB)          :                 0         0
-...
-000 (3187.000.000) 10/28 20:42:10 Job submitted from host: <192.168.28.105:46293?addrs=192.168.28.105-46293>
-...
-001 (3187.000.000) 10/28 20:44:59 Job executing on host: <192.168.28.57:42895?addrs=192.168.28.57-42895>
-...
-005 (3187.000.000) 10/28 20:48:18 Job terminated.
-	(0) Abnormal termination (signal 1)
-	(0) No core file
-		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
-		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
-		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
-		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
-	1607  -  Run Bytes Sent By Job
-	70234144  -  Run Bytes Received By Job
-	1607  -  Total Bytes Sent By Job
-	70234144  -  Total Bytes Received By Job
-	Partitionable Resources :    Usage  Request Allocated
-	   Cpus                 :                 1         1
-	   Disk (KB)            :    75000    75000   9331463
-	   Memory (MB)          :                 0         0
-...
-000 (3188.000.000) 10/28 20:56:02 Job submitted from host: <192.168.28.105:46293?addrs=192.168.28.105-46293>
-...
-001 (3188.000.000) 10/28 20:59:31 Job executing on host: <192.168.28.64:63073?addrs=192.168.28.64-63073>
-...
-005 (3188.000.000) 10/28 21:02:39 Job terminated.
-	(0) Abnormal termination (signal 1)
-	(0) No core file
-		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
-		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
-		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
-		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
-	1614  -  Run Bytes Sent By Job
-	70234160  -  Run Bytes Received By Job
-	1614  -  Total Bytes Sent By Job
-	70234160  -  Total Bytes Received By Job
-	Partitionable Resources :    Usage  Request Allocated
-	   Cpus                 :                 1         1
-	   Disk (KB)            :    75000    75000   9334067
+	   Disk (KB)            :    75000    75000    919806
 	   Memory (MB)          :                 0         0
 ...

@@ -52,6 +52,8 @@ source(paste(lib.folder,"separateoutput.r", sep = ""))
 r.train.nn <- separate.output(rTrainNN, gait.phases)
 summary(r.train.nn)
 
+print(data.folder)
+
 n <- names(r.train.nn)
 f <- as.formula(paste( paste(gait.phases, collapse = " + ")   ," ~", paste(n[!n %in% gait.phases], collapse = " + ")))
 nn <- neuralnet(f,data=r.train.nn,hidden=200)
