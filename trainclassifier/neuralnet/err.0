@@ -1,5 +1,8 @@
 WARNING: Your kernel does not support swap limit capabilities, memory limited without swap.
-Error in paste(data.folder, "data.RData", sep = "") : 
-  object 'data.folder' not found
-Calls: load -> paste
+Warning message:
+algorithm did not converge in 1 of 1 repetition(s) within the stepmax 
+Error in nrow[w] * ncol[w] : non-numeric argument to binary operator
+Calls: compute -> relist
+In addition: Warning message:
+In is.na(weights) : is.na() applied to non-(list or vector) of type 'NULL'
 Execution halted

@@ -1,20 +1,17 @@
-000 (3189.000.000) 10/31 13:11:11 Job submitted from host: <192.168.28.105:46293?addrs=192.168.28.105-46293>
+000 (3201.000.000) 11/07 12:14:23 Job submitted from host: <192.168.28.105:46293?addrs=192.168.28.105-46293>
 ...
-001 (3189.000.000) 10/31 13:11:36 Job executing on host: <192.168.28.53:14539?addrs=192.168.28.53-14539>
+001 (3201.000.000) 11/07 12:14:28 Job executing on host: <192.168.28.54:40021?addrs=192.168.28.54-40021>
 ...
-005 (3189.000.000) 10/31 13:11:38 Job terminated.
-	(0) Abnormal termination (signal 1)
-	(0) No core file
-		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
-		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
-		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
-		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
-	225  -  Run Bytes Sent By Job
-	70234184  -  Run Bytes Received By Job
-	225  -  Total Bytes Sent By Job
-	70234184  -  Total Bytes Received By Job
-	Partitionable Resources :    Usage  Request Allocated
-	   Cpus                 :                 1         1
-	   Disk (KB)            :    75000    75000    919806
-	   Memory (MB)          :                 0         0
+012 (3200.000.000) 11/07 13:58:27 Job was held.
+	Error from slot1@uvcluster-05.cloud.univalle.edu.co: STARTER at 192.168.28.54 failed to send file(s) to <192.168.28.105:13329>: error reading from /var/lib/condor/execute/dir_3401052/data: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <192.168.28.54:29520>
+	Code 13 Subcode 2
+...
+007 (3201.000.000) 11/07 14:21:40 Shadow exception!
+	Error from slot1@uvcluster-05.cloud.univalle.edu.co: STARTER at 192.168.28.54 failed to send file(s) to <192.168.28.105:20947>: error reading from /var/lib/condor/execute/dir_3419873/data: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <192.168.28.54:10279>
+	5597  -  Run Bytes Sent By Job
+	70240576  -  Run Bytes Received By Job
+...
+012 (3201.000.000) 11/07 14:21:40 Job was held.
+	Error from slot1@uvcluster-05.cloud.univalle.edu.co: STARTER at 192.168.28.54 failed to send file(s) to <192.168.28.105:20947>: error reading from /var/lib/condor/execute/dir_3419873/data: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <192.168.28.54:10279>
+	Code 13 Subcode 2
 ...
