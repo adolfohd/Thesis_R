@@ -1,6 +1,6 @@
 rm(list=ls())
 
-is.this.cluster = TRUE
+is.this.cluster = FALSE
 # ANN2 - nnet  ###################################################
 # https://beckmw.wordpress.com/tag/nnet/
 # ANN - neuralnet  ###################################################
