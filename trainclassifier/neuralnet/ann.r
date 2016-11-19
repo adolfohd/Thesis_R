@@ -21,6 +21,8 @@ if (is.this.cluster){
   j  <- as.numeric(args[2])
   output.folder <- "data/"
 }else{
+  i <- 100
+  j <- 1
   setwd("~/code/thesis_R")
   data.folder = "data/"
   lib.folder =  "lib/"
@@ -49,16 +51,26 @@ print(data.folder)
 
 n <- names(r.train.nn)
 f <- as.formula(paste( paste(gait.phases, collapse = " + ")   ," ~", paste(n[!n %in% gait.phases], collapse = " + ")))
-nn <- neuralnet(f,data=r.train.nn,hidden=200, algorithm = 'sag')
+print(f)
+hidden = i*10
+print(paste("one layer, ", hidden, "neurons"))
+nn <- neuralnet(f,data=r.train.nn,
+                hidden=hidden, 
+                algorithm = 'backprop', threshold = 0.01, stepmax = 1e+05)
+
+# algorithm = 'sag'
+
 # plot(nn)
-pr.nn <- compute(nn,rTrainNN[,-ncol(rTrainNN)])
+
 
 # plot(rTrainNN$Right,pr.nn$net.result, col='red',main='Real vs predicted NN',pch=18,cex=0.7)
 # abline(0,1,lwd=2)
 
 output.file.path <- paste(
   output.folder,
-  "out",2*j, ".RData", sep = "")
+  "oneLayer",hidden, "neurons.RData", sep = "")
 
 print(output.file.path)
 save(nn, file= output.file.path)
+
+pr.nn <- compute(nn,rTrainNN[,-ncol(rTrainNN)])
