@@ -1,7 +1,7 @@
 universe                = docker
 docker_image            = fitohd/thesis_r
 executable              = Rscript
-arguments               = ann.r $INT(I) $INT(J)
+arguments               = ann1.r $INT(I) $INT(J)
 should_transfer_files   = YES
 transfer_input_files    = ann.r,../../lib/,../../data/data.RData,data/,
 transfer_output_files   = data
