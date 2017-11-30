@@ -23,7 +23,7 @@ if (is.this.cluster){
 }else{
   i <- 100
   j <- 1
-  setwd("~/code/thesis_R")
+  setwd("~/code/masterthesis/thesis_R/")
   data.folder = "data/"
   lib.folder =  "lib/"
 }

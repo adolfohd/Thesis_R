@@ -2,14 +2,23 @@
 
 
 best.rfc <- function(list.of.files, data.folder){ 
-  i_max = 8
-  j_max = 5
-  forests <- list()
+  # i_max = 8
+  # j_max = 5
+  
+  i_max <- length(list.of.files)
+  print(i_max)
+  
+
   min.error = 1;
-  error <- matrix(NA,i_max,j_max)
-  for (i in 1:i_max){
-    for (j in 1:j_max){
-      current.file.name <- list.of.files[   (i-1)*j_max+j   ]
+  # error <- matrix(NA,i_max,j_max)
+  for (n in 1:i_max){
+    # for (j in 1:j_max){
+      # current.file.name <- list.of.files[   (i-1)*j_max+j   ]
+      current.file.name <- list.of.files[ n ]
+      a <- unique(as.numeric(unlist(strsplit(gsub("[^0-9]", "", current.file.name, "")))))
+      print(a)
+      # i <- current.file.name
+      return(0)
       current.file.path <- paste(data.folder,current.file.name, sep="")
       print(current.file.path)
       file.data <- file.info(current.file.path)
@@ -28,7 +37,7 @@ best.rfc <- function(list.of.files, data.folder){
           best.forest <- output.forest  
         }
       }
-    }
+    #}
   }
   output <- list(best.forest = best.forest, errors = error)
   
